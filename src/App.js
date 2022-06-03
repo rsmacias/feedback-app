@@ -1,5 +1,6 @@
 import Header from './components/Header';
 import FeedbackItem from './components/FeedbackItem';
+import FeedbackData from './data/FeedbackData';
 
 function App () {
     return (
@@ -7,7 +8,7 @@ function App () {
             <Header />
             <div className="container">
                 <h1>This is my App</h1>
-                <FeedbackItem />
+                <FeedbackItem item={{ rating: 5, text: 'This is a sample' }} />
             </div>
         </>
     );

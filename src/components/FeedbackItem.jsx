@@ -1,18 +1,16 @@
 import { useState } from 'react';
 
-function FeedbackItem () {
-
-    const [rating, setRating] = useState(7);
-    const [text, setText] = useState('This is a sample text to test this component');
+function FeedbackItem ({item}) {
 
     return (
         <div className="card">
-            <div className="num-display">{rating}</div>
+            <div className="num-display">{item.rating}</div>
             <div className="text-display">
-                {text}
+                {item.text}
             </div>
         </div>
     );
+    
 }
 
 export default FeedbackItem;
