@@ -1,5 +1,3 @@
-import { useState } from 'react';
-
 function FeedbackItem ({item}) {
 
     return (
@@ -10,7 +8,7 @@ function FeedbackItem ({item}) {
             </div>
         </div>
     );
-    
+
 }
 
 export default FeedbackItem;
