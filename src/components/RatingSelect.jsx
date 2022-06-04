@@ -5,10 +5,6 @@ function RatingSelect({ select }) {
   const [selected, setSelected] = useState(7);
 
   const handleChange = (e) => {
-    console.log('e.target.value', e.target.value);
-    console.log('typeof e.target.value', typeof +e.target.value);
-    console.log('e.currentTarget.value', e.currentTarget.value);
-    console.log('typeof e.currentTarget.value', typeof +e.currentTarget.value);
     setSelected(+e.target.value);
     select(+e.target.value);
   };
