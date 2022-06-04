@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 function Card({children, reverse}) {
     const cardStyles = {
         backgroundColor: reverse ? 'rgba(0,0,0,0.4)' : '#fff',
@@ -9,6 +11,15 @@ function Card({children, reverse}) {
         {children}
     </div>
   )
+}
+
+Card.defaultProps = {
+    reverse: false
+}
+
+Card.propTypes = {
+    children: PropTypes.node.isRequired,
+    reverse: PropTypes.bool,
 }
 
 export default Card
